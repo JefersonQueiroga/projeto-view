@@ -9,3 +9,5 @@ def index(request):
 def list_user(request):
     return render(request,'usuarios.html')
 
+def setup(request,name):
+    return render(request,'configuracao.html',{'name':name})
